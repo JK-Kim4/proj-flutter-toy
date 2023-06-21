@@ -6,8 +6,17 @@ void main() => runApp(MaterialApp(
   home: JWCard(),
 ));
 
-class JWCard extends StatelessWidget {
+class JWCard extends StatefulWidget {
   const JWCard({Key? key}) : super(key: key);
+
+  @override
+  State<JWCard> createState() => _JWCardState();
+}
+
+class _JWCardState extends State<JWCard> {
+
+  int jwLevel = 0;
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +28,30 @@ class JWCard extends StatelessWidget {
         backgroundColor: Colors.grey[700],
         elevation: 0.0,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            jwLevel += 1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
+      ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/profile_default.png'),
+                radius: 40.0,
+              ),
+            ),
+            Divider(
+              height: 90.0,
+              color: Colors.grey[900],
+            ),
             Text(
                 'Hello',
                 style: TextStyle(
@@ -49,12 +77,22 @@ class JWCard extends StatelessWidget {
             Text(
                 'CURRENT LEVEL',
                 style: TextStyle(
-                    color: Colors.amber[200],
+                    color: Colors.grey[200],
                     letterSpacing: 2.0,
-                    fontSize: 28.0,
-                    fontWeight: FontWeight.bold
                   )
               ),
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              '$jwLevel',
+              style: TextStyle(
+                color: Colors.amberAccent[200],
+                letterSpacing: 2.0,
+                fontSize: 28.0,
+                fontWeight: FontWeight.bold
+              ),
+            ),
             SizedBox(
               height: 30,
             ),
@@ -84,3 +122,4 @@ class JWCard extends StatelessWidget {
     );
   }
 }
+
