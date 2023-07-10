@@ -12,15 +12,16 @@ class _ChooseLocationState extends State<ChooseLocation> {
   void getData() async {
 
     // simulate network request for a username
-    await Future.delayed(Duration(seconds: 3), () {
-      print('yoshi');
+    String username = await Future.delayed(Duration(seconds: 3), () {
+      return 'yoshi';
     });
 
     // simulate network request to get bio for the username
-    Future.delayed(Duration(seconds: 2), () {
-      print('vega, musician & egg collector');
+    String bio = await Future.delayed(Duration(seconds: 2), () {
+      return 'vega, musician';
     });
 
+    print('$username - $bio');
 
   }
 
