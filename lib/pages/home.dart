@@ -18,10 +18,18 @@ class _HomeState extends State<Home> {
     data = ModalRoute.of(context)?.settings?.arguments as Map;
     print(data);
 
+    String bgImage = data['isDayTime'] ? 'day.png' : 'night.png';
+
 
     return Scaffold(
       body: SafeArea(
-          child: Padding(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(bgImage),
+                fit: BoxFit.cover
+              )
+            ),
             padding: const EdgeInsets.fromLTRB(0, 120.0, 0, 0),
             child: Column(
               children: [
