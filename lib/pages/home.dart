@@ -19,14 +19,16 @@ class _HomeState extends State<Home> {
     print(data);
 
     String bgImage = data['isDayTime'] ? 'day.png' : 'night.png';
+    Color bgColor = data['isDayTime'] ? Colors.blue : Colors.indigo;
 
 
     return Scaffold(
+      backgroundColor: bgColor,
       body: SafeArea(
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(bgImage),
+                image: AssetImage('assets/$bgImage'),
                 fit: BoxFit.cover
               )
             ),
@@ -40,8 +42,14 @@ class _HomeState extends State<Home> {
                           '/location'
                       );
                     },
-                    icon: Icon(Icons.edit_location),
-                    label: Text('edit button')
+                    icon: Icon(
+                      Icons.edit_location,
+                      color: Colors.white),
+                    label: Text(
+                        'edit button',
+                    style: TextStyle(
+                      color: Colors.white
+                    ),)
                 ),
                 SizedBox(height: 20.0,),
                 Row(
@@ -51,7 +59,8 @@ class _HomeState extends State<Home> {
                       data['location'],
                       style: TextStyle(
                         fontSize: 28.0,
-                        letterSpacing: 2.0
+                        letterSpacing: 2.0,
+                        color: Colors.white
                       ),
                     )
                   ],
@@ -61,7 +70,8 @@ class _HomeState extends State<Home> {
                   data['time'],
                   style: TextStyle(
                     fontSize: 60.0,
-                    letterSpacing: 2.0
+                    letterSpacing: 2.0,
+                    color: Colors.white
                   ),
                 ),
               ],
