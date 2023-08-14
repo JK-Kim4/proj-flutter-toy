@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "77137613714",
+    "project_id": "jongwan-flutter-project",
+    "storage_bucket": "jongwan-flutter-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77137613714:android:d9e06a9191b3176665274b",
+        "android_client_info": {
+          "package_name": "com.example.learningdart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77137613714-1cabgciogvvtl4s2cjnub9fthl0p2oj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT1G6FW68xPgMai0qqNXAWsLHVQYs8Yvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77137613714-1cabgciogvvtl4s2cjnub9fthl0p2oj6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "77137613714-60pljvoa9k792e66ha7qltcdokhbd67p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.learningdart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77137613714:android:26979c1be0df9e4f65274b",
+        "android_client_info": {
+          "package_name": "com.tutomato.tutorial_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77137613714-1cabgciogvvtl4s2cjnub9fthl0p2oj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT1G6FW68xPgMai0qqNXAWsLHVQYs8Yvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77137613714-1cabgciogvvtl4s2cjnub9fthl0p2oj6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "77137613714-60pljvoa9k792e66ha7qltcdokhbd67p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.learningdart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
