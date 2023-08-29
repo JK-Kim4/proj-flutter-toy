@@ -31,10 +31,10 @@
               "client_type": 3
             },
             {
-              "client_id": "77137613714-60pljvoa9k792e66ha7qltcdokhbd67p.apps.googleusercontent.com",
+              "client_id": "77137613714-363luvdqnh0a8rqkv73mpd93m0gdn3g6.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.learningdart"
+                "bundle_id": "com.tutomato.tutorialFlutter.RunnerTests"
               }
             }
           ]
@@ -67,10 +67,10 @@
               "client_type": 3
             },
             {
-              "client_id": "77137613714-60pljvoa9k792e66ha7qltcdokhbd67p.apps.googleusercontent.com",
+              "client_id": "77137613714-363luvdqnh0a8rqkv73mpd93m0gdn3g6.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.learningdart"
+                "bundle_id": "com.tutomato.tutorialFlutter.RunnerTests"
               }
             }
           ]
